@@ -1,0 +1,27 @@
+class Cat:
+    def __init__(self, name):
+        self.name = name
+ 
+    def info(self):
+        print(f"I am a cat. My name is {self.name}.")
+ 
+    def make_sound(self):
+        print("Meow")
+ 
+ 
+class Dog:
+    def __init__(self, name):
+        self.name = name
+ 
+    def info(self):
+        print(f"I am a Dog. My name is {self.name}.")
+ 
+    def make_sound(self):
+        print("Woof")
+cat1 = Cat("Kitty")
+dog1 = Dog("Fluffy")
+ 
+for animal in (cat1, dog1):
+    animal.make_sound()
+    animal.info()
+    animal.make_sound()
